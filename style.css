@@ -1,0 +1,295 @@
+body {
+  background-color: yellowgreen;
+}
+
+/*@keyframes background{
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}*/
+.nav-body {
+  background: -webkit-gradient(linear, left top, right top, from(#BDB8B8), to(rgba(255, 255, 255, 0))), #FFFFFF;
+  background: linear-gradient(90deg, #BDB8B8 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+  height: 115vh;
+  border: 1px solid #bdb8b8;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+}
+
+.navigation {
+  height: 20vh;
+  width: 90%;
+}
+
+.navigation img {
+  height: 100px;
+}
+
+.navigation h2 {
+  float: right;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.body .body-text {
+  z-index: 1;
+}
+
+.body .images {
+  border-radius: 180px;
+}
+
+.body .images img {
+  position: relative;
+  height: 400px;
+  border-radius: 260px;
+  border: 0.5px solid gray;
+  -webkit-transition: linear 100ms 20ms;
+  transition: linear 100ms 20ms;
+  z-index: 1;
+}
+
+.body .images .smallme {
+  position: absolute;
+  left: 100px;
+  height: 410px;
+  width: 400px;
+  border-radius: 500px;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.body h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 3.5rem;
+  line-height: 15px;
+}
+
+.body h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 4.8rem;
+  color: #5c5353;
+  line-height: normal;
+  line-height: 50px;
+  text-shadow: 0 0 3px #000000;
+}
+
+.body h3 {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 56px;
+}
+
+.body p {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.7rem;
+  line-height: 5px;
+  color: #c05555;
+}
+
+.body .socialmedia img {
+  background-color: rgba(0, 0, 0, 0.103);
+  border-radius: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  margin: 2px 8px;
+}
+
+.images:hover img {
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.images:hover img.smallme {
+  opacity: 1;
+}
+
+.line {
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(darkgrey), color-stop(grey), to(white));
+  background: linear-gradient(to right, black, darkgrey, grey, white);
+  -webkit-animation: line 2000ms linear infinite;
+          animation: line 2000ms linear infinite;
+}
+
+@-webkit-keyframes line {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes line {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.dual {
+  position: absolute;
+  width: 98%;
+  top: 107vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dual .about {
+  background-color: white;
+  padding: 1px 0;
+  margin: 0 40px;
+  border-radius: 10px;
+  width: 50%;
+  border: 1px solid #a39e9e;
+  -webkit-box-shadow: 5px 5px 10px #aaaaaa;
+          box-shadow: 5px 5px 10px #aaaaaa;
+}
+
+.dual .about h3 {
+  font-family: 'Roboto Slab', serif;
+  margin-left: 1rem;
+  font-size: 2rem;
+  line-height: 0;
+}
+
+.dual .about p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6rem;
+  width: 84%;
+  margin-left: 1rem;
+  color: #4d4d4d;
+}
+
+.projects {
+  margin-top: 460px;
+  margin-left: 37px;
+}
+
+.projects div {
+  width: 50%;
+  border: 1px solid #757474;
+  border-radius: 6px;
+  margin: 0px 10px 20px 0;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  padding: 0 2px 5px 10px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(-100%, grey), to(white));
+  background: linear-gradient(to left, grey -100%, white 100%);
+}
+
+.projects h2 {
+  font-size: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.projects h3 {
+  font-size: 1.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.projects p {
+  font-size: 1.2rem;
+  color: #3d3c3c;
+}
+
+.projects a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #d1d1d1;
+  background-color: #1f1e1e;
+  border-radius: 10px;
+  padding: 0 4px;
+}
+
+.projects img {
+  position: absolute;
+  top: 1400px;
+  right: 0px;
+  height: 500px;
+  z-index: -1;
+}
+
+footer {
+  background-color: white;
+  color: #272727;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  opacity: 80%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer .about-website {
+  padding-left: 20px;
+  width: 30%;
+}
+
+footer .about-website img {
+  height: 100px;
+}
+
+footer .about-website h4 {
+  font-size: 1.4rem;
+}
+
+footer .contact-info .images img {
+  background-color: rgba(0, 0, 0, 0.103);
+  border-radius: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35px;
+  margin-right: 20px;
+}
+/*# sourceMappingURL=style.css.map */
